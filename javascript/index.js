@@ -8,6 +8,7 @@ const ULTIMO_NIVEL = 3
 class Juego {
   constructor() {
     this.inicializar = this.inicializar.bind(this)
+    this.inicializar()
     this.generarSecuencia()
     setTimeout(() => {
       this.siguienteNivel()
